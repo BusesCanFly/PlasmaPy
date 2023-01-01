@@ -1,0 +1,9 @@
+project: PlasmaPy
+
+target: fuzz_PlasmaPy
+
+image: ghcr.io/busescanfly/plasmapy:latest
+
+cmds:
+    - cmd: /src/mayhem/fuzz_PlasmaPy.py
+      libfuzzer: true
